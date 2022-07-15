@@ -1,0 +1,146 @@
+/* NAVBAR */
+.navbar {
+    background: transparent;
+    transition: 0.3s;
+}
+
+.navbar:hover {
+    background: white;
+}
+
+.navbar:hover .links a , .navbar:hover .navbar-header a {
+    color: black;
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: white;
+    transition: background-color 0.3s linear from rig;
+}
+
+.navbar-fixed-top.scrolled .links a , .navbar-fixed-top.scrolled .navbar-header a {
+    color: black;
+}
+
+.navbar .navbar-header a {
+    transition: 0.5s;
+    position: fixed;
+    margin: 14px 0px;
+    color: rgb(255, 115, 0);
+    font-size: 35px;
+}
+
+.navbar .logo {
+    margin: 22px 0px;
+}
+
+.navbar .navbar-toggle i {
+    border: rgb(49, 49, 49) 2px solid;
+    border-radius: 5px;
+    color: rgb(255, 115, 0);
+    font-size: 30px;
+}
+
+.navbar .links {
+    margin-top: 25px;
+}
+
+.navbar .links a {
+    transition: 0.5s;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 17px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar .cool-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar .cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.navbar .cool-link:hover::after {
+    width: 100%;
+    transition: .3s;
+}
+
+.navbar .navbar-header .insta {
+    margin-left: 20px;
+}
+
+.navbar .navbar-header .face {
+    margin-left: 60px;
+}
+
+/* MEDIA */
+
+@media only screen and (max-width: 767px) {
+    .navbar {
+        background: white;
+    }
+    
+    .navbar .links a , .navbar .navbar-header a {
+        color: black;
+    }
+
+    .navbar .links {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .navbar .links a {
+        font-size: 20px;
+    }
+
+    .navbar .navbar-collapse {
+        border-top: 1px solid grey;
+    }
+
+    .navbar .navbar-header .insta {
+        margin-left: 10px;
+    }
+    
+    .navbar .navbar-header .face {
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .navbar .logo {
+        margin: 22px 0;
+        width: 170px;
+    }
+
+    .navbar .navbar-header a {
+        margin: 16px 0;
+        font-size: 25px;
+    }
+
+    .navbar .navbar-toggle {
+        margin: 5px 0;
+    }
+
+    .navbar .navbar-toggle i {
+        font-size: 25px;
+    }
+
+    .navbar .links {
+        margin-top: 30px;
+    }
+    
+
+    .navbar .links a {
+        font-size: 15px;
+        margin: 0 5px;
+    }
+}

@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    overflow: overlay;
+}
+
+.container {
+    width: 100%;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 5px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}

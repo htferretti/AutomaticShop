@@ -1,0 +1,179 @@
+/* Intro */
+.conteudo .intro .row {
+    padding: 0px 0 0 0;
+}
+
+.conteudo .intro .txt-intro-sm {
+    text-align: center;
+    display: none;
+    margin: 50px 0px;
+}
+
+.conteudo .intro .txt-intro-sm h1{
+    font-size: 55px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+}
+
+.conteudo .intro .txt-intro {
+    text-align: center;
+    margin: 154px 0px;
+}
+
+.conteudo .intro .txt-intro h1{
+    font-size: 55px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+}
+
+.conteudo .intro .introducao {
+    margin-top: 60px;
+    display: inline-flex;
+}
+
+
+.conteudo .intro .introducao img {
+    width: 350px;
+    height: 350px;
+}
+
+.conteudo .intro .introducao-txt {
+    width: 550px;
+}
+
+
+.conteudo .intro .introducao h1 {
+    margin-top: 90px;
+    margin-left: 15px;
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.conteudo .intro .introducao hr {
+    border: none;
+    border-top: solid 3px rgb(255, 115, 0);
+}
+
+.conteudo .intro .introducao a {
+    margin-left: 15px;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.intro .cool-link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.intro .cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.intro .cool-link:hover::after {
+    width: 100%;
+    transition: .3s;
+}
+
+/* MEDIA */
+@media only screen and (max-width: 1750px) {
+    .conteudo .intro .txt-intro h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1650px) {
+    .conteudo .intro .txt-intro {
+        display: none;
+    }
+
+    .conteudo .intro .txt-intro-sm {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .conteudo .intro .txt-intro-sm h1{
+        font-size: 40px;
+    }
+
+    .conteudo .intro .introducao-txt {
+        width: 400px;
+    }
+
+    .conteudo .intro .introducao-txt h1 {
+        margin-top: 110px;
+        font-size: 29px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .conteudo .intro .introducao {
+        margin-top: 0px;
+    }
+
+    .conteudo .intro .txt-intro-sm h1{
+        font-size: 30px;
+    }
+
+    .conteudo .intro .introducao {
+        display: block;
+    }
+
+    .conteudo .intro .introducao-txt h1 {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .conteudo .intro .introducao a {
+        margin-bottom: 100px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .conteudo .intro .txt-intro-sm h1{
+        font-size: 23px;
+    }
+
+    .intro .introducao img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .conteudo .intro .introducao-txt {
+        width: 80%;
+    }
+
+    .conteudo .intro .introducao-txt h1 {
+        font-size: 20px;
+    }
+
+    .conteudo .intro .introducao img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .conteudo .intro .txt-intro-sm h1 {
+        font-size: 20px;
+    }
+}
